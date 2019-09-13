@@ -70,7 +70,7 @@ function disableCards() {
     countDown = 3;
     resetBoard();
     if (cardsActive == cardsInactive) {
-        setTimeout(() => { alert("Vocẽ Venceu com " + document.getElementById('pontuacao').innerHTML + " pontos!!!"); }, 1000);
+        setTimeout(() => { alert("Com " + document.getElementById('pontuacao').innerHTML + "pontos de ganhar você acaba, estar de parabéns você Jovem Padawan"); }, 1000);
     }
 }
 
@@ -112,7 +112,7 @@ function criaJogo(event) {
             veryHard = true;
             break;
         default:
-            alert("Dificuldade Inexistente");
+            alert("Não existir essa dificuldade, Jovem Padawan");
             break;
     }
 }
