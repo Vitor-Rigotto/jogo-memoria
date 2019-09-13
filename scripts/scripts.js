@@ -70,7 +70,7 @@ function disableCards() {
     countDown = 3;
     resetBoard();
     if (cardsActive == cardsInactive) {
-        setTimeout(() => { alert("Com " + document.getElementById('pontuacao').innerHTML + "pontos de ganhar você acaba, estar de parabéns você Jovem Padawan"); }, 1000);
+        setTimeout(() => { alert("Com " + document.getElementById('pontuacao').innerHTML + " pontos de ganhar você acaba, estar de parabéns você Jovem Padawan"); }, 1000);
     }
 }
 
