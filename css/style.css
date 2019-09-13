@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: rgb(0, 35, 58);
+}
+
+.selecionador {
+    margin: auto;
+    background-color:rgb(50, 107, 33);
+    font-size: 20px;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 1px rgba(31, 31, 31, 0.3);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.jogo-memoria {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.carta-memoria {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 5px 5px 5px rgba(31, 31, 31, 0.3);
+}
+
+.carta-memoria:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.carta-memoria.flip {
+    transform: rotateY(180deg);
+}
+
+.frente-carta{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #FFFFFF;
+    backface-visibility: hidden;
+}
+
+.fundo-carta {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: rgb(96, 80, 67);
+    backface-visibility: hidden;
+}
+
+.frente-carta {
+    transform: rotateY(180deg);
+}

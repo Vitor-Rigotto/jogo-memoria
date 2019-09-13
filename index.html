@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gioco di Memoria</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/bandeira.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="selecionador">
+        <label for="selecao">Seleziona una difficoltà: (selecione uma dificuldade) </label>
+        <form id="selecao">
+            <input type="radio" name="dificuldade" id="facil" onchange="criaJogo(event)">Facile (Fácil)<br>
+            <input type="radio" name="dificuldade" id="medio" onchange="criaJogo(event)">Media (Médio)<br>
+            <input type="radio" name="dificuldade" id="dificil" onchange="criaJogo(event)">Difficile (Difícil)<br>
+            <input type="radio" name="dificuldade" id="pro-player" onchange="criaJogo(event)">Chuck Norris<br>
+        </form>
+        <label for="pontuacao">Pontuação: </label>
+        <b id='pontuacao'>0</b><br>
+        <b id='aviso'></b>
+    </div>
+        <section class="jogo-memoria" id="mesa-jogo" >
+            
+        </section>
+    <script src="scripts/scripts.js"></script>
+
+
+</html>
